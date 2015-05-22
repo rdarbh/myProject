@@ -4,6 +4,16 @@ This code builds Web Service that connects to MySQL DB. Also used in this projec
 
 WSDL Location once you build it : http://localhost:8080/Employee/EmployeeService?wsdl
 
+Script to create the Employee table:
+```
+CREATE TABLE `employee` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+```
 Example Soap UI:
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.dwight.dhs.utah.gov/">
